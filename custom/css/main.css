@@ -1,0 +1,196 @@
+.text-ellipsis-row-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.article-blog-content img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.sub-category-menu > li.active {
+  background-color: #EEE !important;
+}
+
+.table-product-spec tr > td {
+  vertical-align: middle !important;
+}
+
+.review-box label {
+  font-size: 12px;
+}
+
+.review-box p {
+  font-weight: bold;
+}
+
+#thumbs {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#thumbs .img-thumb {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-bottom: 14px !important;
+}
+
+.detail-product-button-group .btn{
+  width: 49%;
+}
+
+/*section-ribbons*/
+.header-ribbon {
+ font-size: 20px !important;
+ /* This header-ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the header-ribbon elements */
+ width: 94%;
+ position: relative;
+ background: #4ea1b2;
+ color: #fff;
+ text-align: center;
+ padding: 10px 20px; /* Adjust to suit */
+ margin: 20px auto 30px; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the header-ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.header-ribbon:before, .header-ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -10px;
+ border: 15px solid #5fc0d4;
+ z-index: -1;
+}
+.header-ribbon:before {
+ left: -20px;
+ border-right-width: 15px;
+ border-left-color: transparent;
+}
+.header-ribbon:after {
+ right: -20px;
+ border-left-width: 15px;
+ border-right-color: transparent;
+}
+.header-ribbon .header-ribbon-content:before, .header-ribbon .header-ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #4ea1b2 transparent transparent transparent;
+ bottom: -10px;
+}
+.header-ribbon .header-ribbon-content:before {
+ left: 0;
+ border-width: 10px 0 0 10px;
+}
+.header-ribbon .header-ribbon-content:after {
+ right: 0;
+ border-width: 10px 10px 0 0;
+}
+
+/*discount-ribbons*/
+.discount-ribbon {
+ font-size: 14px !important;
+ /* This discount-ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the discount-ribbon elements */
+ width: 50%;
+ position: relative;
+ background: #4ea1b2;
+ color: #fff;
+ text-align: center;
+ padding: 10px 20px; /* Adjust to suit */
+ margin: 20px auto 30px; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the discount-ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.discount-ribbon:before, .discount-ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -10px;
+ border: 15px solid #5fc0d4;
+ z-index: -1;
+}
+.discount-ribbon:before {
+ left: -20px;
+ border-right-width: 15px;
+ border-left-color: transparent;
+}
+.discount-ribbon:after {
+ right: -20px;
+ border-left-width: 15px;
+ border-right-color: transparent;
+}
+.discount-ribbon .discount-ribbon-content:before, .discount-ribbon .discount-ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #4ea1b2 transparent transparent transparent;
+ bottom: -10px;
+}
+.discount-ribbon .discount-ribbon-content:before {
+ left: 0;
+ border-width: 10px 0 0 10px;
+}
+.discount-ribbon .discount-ribbon-content:after {
+ right: 0;
+ border-width: 10px 10px 0 0;
+}
+.non-semantic-protector { position: relative; z-index: 1; }
+
+
+/*Loader*/
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #4ea1b2;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
